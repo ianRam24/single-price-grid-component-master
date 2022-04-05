@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+.content {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.comunity {
+    padding: 3em 2em;
+    background-color: #fff;
+    grid-column: 1/-1;
+}
+
+.comunity h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1em;
+}
+
+.comunity h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: .5em;
+}
+
+.comunity p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding: 3em 2em;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription h3 {
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.subscription p {
+    color: #fff;
+    /* font-size: em; */
+    font-weight: 400;
+}
+
+.subscription span {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.subscription button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    outline: none;
+    padding: 1em 3em;
+    width: 200px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 15px;
+    /* margin: 1em 2em; */
+    align-self: center;
+    margin-top: 1em;
+}
+
+.us {
+    padding: 3em 2em;
+    background-color: hsl(179, 50%, 53%);
+    grid-column: 3/5;
+}
+
+.us h3 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.us p {
+    font-weight: 100;
+    color: #fff;
+    font-size: .8em;
+    line-height: 1.8;
+    width: 180px;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer {
+    margin-top: -50px;
+}
+
+@media screen and (max-width:768px) {
+
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-bottom: 10em;
+        max-width: 375px;
+        height: 80%;
+    }
+
+    .comunity {
+        grid-row: 1/2;
+        height: 260px;
+        padding-bottom: 10px;
+    }
+
+    .subscription {
+        grid-row: 2/3;
+        height: 250px;
+    }
+
+    .us {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        height: 250px;
+    }
+
+
+
+}

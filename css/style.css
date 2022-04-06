@@ -112,12 +112,15 @@ body {
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    margin-left: 3px;
 }
 
 footer {
@@ -125,8 +128,6 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-
-
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
@@ -147,7 +148,7 @@ footer {
     }
 
     .us {
-        grid-row: 3/4;
+        /* grid-row: 3/4; */
         grid-column: 1/-1;
         height: 250px;
     }

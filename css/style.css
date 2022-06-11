@@ -20,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .grid {
@@ -66,7 +67,6 @@ body {
 
 .subscription p {
     color: #fff;
-    /* font-size: em; */
     font-weight: 400;
 }
 
@@ -86,7 +86,6 @@ body {
     text-align: center;
     font-size: 1em;
     border-radius: 15px;
-    /* margin: 1em 2em; */
     align-self: center;
     margin-top: 1em;
 }
@@ -123,11 +122,12 @@ body {
     margin-left: 3px;
 }
 
-footer {
-    margin-top: -50px;
-}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:375px) {
+    .content {
+        justify-content: end;
+    }
+
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
@@ -138,19 +138,17 @@ footer {
 
     .comunity {
         grid-row: 1/2;
-        height: 260px;
-        padding-bottom: 10px;
+
     }
 
     .subscription {
         grid-row: 2/3;
-        height: 250px;
+
     }
 
     .us {
-        /* grid-row: 3/4; */
         grid-column: 1/-1;
-        height: 250px;
+
     }
 
 
